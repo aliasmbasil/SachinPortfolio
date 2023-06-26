@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(152, 152, 197);
+    position:sticky ;
+    top: 0;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px;
+}
+.nav-bar ul li{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    padding: 40px;
+    color: rgb(1, 1, 7);
+
+}
+.nav-bar ul li a:hover{
+    color: blue;
+    text-shadow: 5px 5px 8px wheat
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(113, 113, 138, 0.103);
+    height: 850px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(10, 10, 177);
+}
+#home::before{
+    content: " ";
+    position: absolute;
+    background-image: url('./images/sachin\ 1.jpg');
+    height: 850px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    
+}
+
+.main{
+    border: 1px  white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 8%;
+    top: 150px;
+}
+
+.heading{
+    margin: 10px;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px 30px;
+    background-color: transparent;
+}
+.btn:hover{
+    color: blue;
+    cursor: pointer;
+    background-color: rgb(64, 47, 218);
+    box-shadow: 0 0 6px white,0 0 6px white,0 0 6px white;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.pic{
+    display: flex;
+}
+.pic img{
+    width:300px ;
+    height:320px ;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+}   
+.intro p{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#video{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(140, 115, 163);
+    align-items: center;
+    padding: 20px;
+}
+.sachin-vedio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sachin-vedio iframe{
+    width: 350 px;
+    height: 250px;
+    margin: 10px;
+}
+
+#gallary{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding: 20px;
+}
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.photos img{
+    width: 350 px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 20px;
+    transform: scale(0.5s);
+    
+}
+.photos img:hover{
+    width: 350px;
+    /* transition: .6s; */
+    
+}
+
+#writings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(161, 129, 190);
+    margin: 20px;
+}
+.book{
+    margin: 10px;
+    height: 500px;
+}
+.book iframe{
+    width: 750px;
+    height: 500px;
+}
+
+#contact{
+    background-color: rgb(160, 136, 184);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.iocn{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+.icon h4{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
